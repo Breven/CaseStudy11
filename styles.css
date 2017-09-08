@@ -1,0 +1,21 @@
+body {
+  background: palegreen;
+  background: url("images/golf.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main {
+  background-color: whitesmoke;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.footer {
+  background-color: rgb(28, 27, 27);
+  color: whitesmoke;
+  padding-top: 10px;
+	padding-bottom: 5px;
+	border: 0.5px solid gray;
+}
