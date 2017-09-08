@@ -1,5 +1,6 @@
+/* page backgrounds */
 body {
-  background: palegreen;
+  background: rgb(117, 194, 50);
   background: url("images/golf.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,14 +9,27 @@ body {
 }
 .main {
   background-color: whitesmoke;
+  box-shadow: 0.1px 1.3px 1px 1px gray;
 }
 .navbar {
   margin-bottom: 0;
 }
+
+/* footer */
 .footer {
   background-color: rgb(28, 27, 27);
-  color: whitesmoke;
+  color: ivory;
   padding-top: 10px;
 	padding-bottom: 5px;
-	border: 0.5px solid gray;
+	border: 1px solid gray;
+}
+.footer a:link {
+  color: rgb(117, 194, 50);
+}
+.footer a:visited {
+  color: rgb(36, 157, 238);
+}
+.footer a:hover {
+  text-decoration: none;
+  color: whitesmoke;
 }
