@@ -32,7 +32,45 @@
       </div>
     </nav>
     <div class="container main">
-      <div style="height: 1500px;"></div>
+      <div class="row col-lg-15 col-md-15 col-sm-15 col-xs-15">
+        <div id="myCarousel" class="carousel slide" data-interval="9001" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target = "#myCarousel" data-slide-to = "0" class="active"></li>
+            <li data-target = "#myCarousel" data-slide-to = "1"></li>
+            <li data-target = "#myCarousel" data-slide-to = "2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src ="images/landscape.jpg" alt="Golf Course" class="img-responsive">
+              <div class="carousel-caption carouselShadow">
+                <h1>Welcome to The Golfers Guide!</h1>
+                <p>We are here to improve your game.</p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="tips.html"><img src ="images/welcome.jpg" alt="Golfer" class="img-responsive"></a>
+              <div class="carousel-caption carouselShadow">
+                <h2>Let us teach you how to play like a pro.</h2>
+                <p><a class="btn btn-success btn-lg" href="tips.html" role="button">Tips Page</a></p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="contact.html"><img src ="images/lesson.jpg" alt="Golf Instructor" class="img-responsive"></a>
+              <div class="carousel-caption carouselShadow">
+                <h1>Book A Lesson Today!</h1>
+                <p><a class="btn btn-success btn-lg" href="contact.html" role="button">Contact Us</a></p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+          </a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+          </a>
+        </div>
+      </div>
+      <div style="height: 1000px;"></div>
 	  </div>
     <div class="container border text-center footer">
       <ul class="list-inline">

@@ -15,6 +15,20 @@ body {
   margin-bottom: 0;
 }
 
+/* Carousel */
+#myCarousel {
+  border-left: 0.5px solid gray;
+  border-right: 0.5px solid gray;
+  border-bottom: 1px solid gray;
+}
+.btn {
+  border: 1px solid black;
+  color: black;
+}
+.carouselShadow {
+  text-shadow: 1px 1px black;
+}
+
 /* footer */
 .footer {
   background-color: rgb(28, 27, 27);
