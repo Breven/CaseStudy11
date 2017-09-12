@@ -14,19 +14,6 @@ body {
 .navbar {
   margin-bottom: 0;
 }
-.tipstxt { 
-   position: absolute; 
-   top: 10%; 
-   left: 10%; 
-   width: 100%; 
-   font-size: 125%;
-}
-.tipstxt li {
-	font-size: 150%;
-}
-.tipstxt p {
-	text-indent: 30px;
-}
 
 /* Carousel */
 #myCarousel {
@@ -40,6 +27,11 @@ body {
 }
 .carouselShadow {
   text-shadow: 1px 1px black;
+}
+
+/* body */
+.spacing {
+  line-height: 2.3em;
 }
 
 /* links */
