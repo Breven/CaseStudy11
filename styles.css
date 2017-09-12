@@ -42,6 +42,11 @@ body {
   background-color: rgb(117, 194, 50);
 }
 
+/* forms */
+#scoreValue, #courseValue, #slopeValue {
+  width: 10em;
+}
+
 /* footer */
 .footer {
   background-color: rgb(28, 27, 27);

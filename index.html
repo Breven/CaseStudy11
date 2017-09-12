@@ -81,7 +81,35 @@
       <p class="links">We are a collective of golf professionals dedicated to expanding and sharing our golf knowledge with you to improve your game. With our guidance and plenty of practice you should see your game steadily improve. Whether you aspire to become a golf professional or just want to impress your friends on the course, we have something for you. So, lets begin; first step is finding out what your handicap is. If you already know your handicap feel free to head over to our <a href="tips.html">Tips Page</a>.</p>
       <br>
       <p class="lead">Handicap Calculator</p>
-      <div style="height: 100px;"></div>
+      <p>The first step to finding out your handicap starts with getting some rounds in and collecting data from those performances. Generally, a range of 5-20 of your most current rounds will suffice as enough reps to accurately calculate your handicap. You will need to find the course rating and slope of the golf property you played on.</p>
+      <p>The reason why course rating and slope have a major role with the handicap differential calculation is because both figures indicate course difficulty. For example, let’s say that Bill and Steve averaged 100 strokes over 18 holes, but Steve played a more difficult course than Bill. As an alternative to using averaged scores to determine the handicap index, distinct skill level is factored into the comparisons. Thus, Steve would be more skilled than Bill on the average golf course.</p>
+      <br>
+      <form>
+        <div class="form-group">
+          <label for="scoreValue">
+            Enter your score:
+          </label>
+          <input type="number" class="form-control" id="scoreValue" placeholder="Your score">
+        </div>
+        <div class="form-group">
+          <label for="courseValue">
+            Enter the course rating:
+          </label>
+          <input type="number" class="form-control" id="courseValue" placeholder="Course Rating">
+        </div>
+        <div class="form-group">
+          <label for="slopeValue">
+            Enter the slope (listed on your scorecard):
+          </label>
+          <input type="number" class="form-control" id="slopeValue" placeholder="Course Slope">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success btn-lg" id="submit">Calculate Handicap</button>
+      </form>
+      <br>
+      <br>
+      <p class="links">Now that you know your handicap, you can begin your training. Head over to the <a href="tips.html">Tips Page</a> to begin your training. If you would like much more indepth coaching you can <a href="contact.html">contact us or book a lesson</a>.
+      <div style="height: 20px;"></div>
 	  </div>
     <div class="container border text-center footer">
       <ul class="list-inline">
@@ -96,6 +124,14 @@
       document.getElementById("welcomeImage").addEventListener("click", function() {
         alert("Welcome to The Golf Guide, hopefully we can help");
       }, false);
+      function handicapCalc() {
+        var score = document.getElementById("scoreValue").value;
+        var course = document.getElementById("courseValue").value;
+        var slope = document.getElementById("slopeValue").value;
+        var handicap = (score - course) * 113 / slope
+        alert("Your handicap is " + handicap);
+      }
+      document.getElementById("submit").addEventListener("click", handicapCalc, false);
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
