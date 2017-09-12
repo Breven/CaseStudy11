@@ -20,6 +20,12 @@
     <nav class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="index.html">The Golfers Guide</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -42,7 +48,7 @@
           </ol>
           <div class="carousel-inner">
             <div class="item active">
-              <img src ="images/landscape.jpg" alt="Golf Course" class="img-responsive">
+              <img src ="images/landscape.jpg" alt="Golf Course" class="img-responsive" id="welcomeImage">
               <div class="carousel-caption carouselShadow">
                 <h1>Welcome to The Golfers Guide!</h1>
                 <p>We are here to improve your game.</p>
@@ -72,7 +78,9 @@
         </div>
       </div>
       <h1 class="page-header">Welcome to The Golfers Guide! <small>Our mission is to help you improve your golf game.</small></h1>
+      <p class="links">We are a collective of golf professionals dedicated to expanding and sharing our golf knowledge with you to improve your game. With our guidance and plenty of practice you should see your game steadily improve. Whether you aspire to become a golf professional or just want to impress your friends on the course, we have something for you. So, lets begin; first step is finding out what your handicap is. If you already know your handicap feel free to head over to our <a href="tips.html">Tips Page</a>.</p>
       <br>
+      <p class="lead">Handicap Calculator</p>
       <div style="height: 100px;"></div>
 	  </div>
     <div class="container border text-center footer">
@@ -84,6 +92,11 @@
         <li><a href="contact.html">Book A Lesson</a></li>
       </ul>
 	  </div>
+    <script>
+      document.getElementById("welcomeImage").addEventListener("click", function() {
+        alert("Welcome to The Golf Guide, hopefully we can help");
+      }, false);
+    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	  <!-- Include all compiled plugins (below), or include individual files as needed -->
