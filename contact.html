@@ -40,6 +40,33 @@
     </nav>
     <div class="container main">
       <div style="height: 1500px;"></div>
+		<form id="lessonform">
+			<fieldset>
+				<legend>Lesson Information</legend>
+					<input type="number" min="1" max="4" id="lessonhrs" value="1" /> 
+						<label for="lessonhrs">
+							<p># of hours (1&#8209;4)</p>
+							<p>$100/hr</p>
+						</label>
+					<input type="radio" name="beginner" id="beginner" value="Beginner" />
+						<label for="lessonlevel">
+							<p>Beginner</p>
+						</label>
+					<input type="radio" name="intermediate" id="intermediate" value="Intermediate" />
+						<label for="lessonlevel">
+							<p>Intermediate</p>
+						</label>
+					<input type="radio" name="advanced" id="advanced" value="advanced" />
+						<label for="lessonlevel">
+							<p>Advanced</p>
+						</label>
+					<input type="checkbox" id="private" />
+						<label for="private">
+							<p>Private Lesson</p>
+							<p>$250</p>
+						</label>
+			</fieldset>
+		</form>
 	  </div>
     <div class="container border text-center footer">
       <ul class="list-inline">
