@@ -44,35 +44,35 @@
 			<h2>Lesson Information</h2>
 				<p>Our professional golf instructors are available for group or private lessons.  Group lessons consist of no more than 5 students.</p>
 				<p>Please fill out the below form for pricing</p>
-			<form id="lessonform">
-			<fieldset>
-				<legend>Lesson Length</legend>
-					<input type="number" min="1" max="4" id="lessonhrs" value="1" /> 
-						<label for="lessonhrs">
-							<p># of hours (1&#8209;4)</p>
-							<p>$100/hr</p>
-						</label>
-					<input type="radio" name="beginner" id="beginner" value="Beginner" />
-						<label for="lessonlevel">
-							<p>Beginner</p>
-						</label>
-					<input type="radio" name="intermediate" id="intermediate" value="Intermediate" />
-						<label for="lessonlevel">
-							<p>Intermediate</p>
-						</label>
-					<input type="radio" name="advanced" id="advanced" value="advanced" />
-						<label for="lessonlevel">
-							<p>Advanced</p>
-						</label>
-					<input type="checkbox" id="private" />
-						<label for="private">
-							<p>Private Lesson</p>
-							<p>$250</p>
-						</label>
-			</fieldset>
-			<fieldset id="submitbutton">
-				<input type="button" id="submit" value="Submit" />
-			</fieldset>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="lessonhrs" class="col-sm-2 control-label"># of hours (1&#8209;4)</label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" min="1" max="4" id="lessonhrs" value="1" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="beginner" value="beginner"> Beginner
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="intermediate" value="intermediate"> Intermediate
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="advanced" value="advanced"> Advanced
+					</label>
+				</div>
+				<div class="checkbox">
+				<label>
+					<input type="checkbox" value="private">
+					Private Lesson (extra $200 charge)
+				</label>
+				</div>						
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-default">Submit</button>
+					</div>
+				</div>
 		</form>
 		<h3>Questions?</h3>
 			<h4>Please contact us!  We are always ready to help!</h4>
