@@ -39,18 +39,18 @@
       </div>
     </nav>
     <div class="container main">
-		<article>
-			<h2>Lesson Information</h2>
-				<p>Our professional golf instructors are available for group or private lessons.  Group lessons consist of no more than 5 students.</p>
-				<p>Please fill out the below form for pricing</p>
+		<h1>Lesson Information</h1>
+			<h4>Our professional golf instructors are available for group or private lessons.  Group lessons consist of no more than 5 students.</h4>
+			<h4>To book a lesson:</h4>
 			<form class="form-horizontal">
 				<div class="form-group">
-					<label for="lessonhrs" class="col-sm-2 control-label"># of hours (1&#8209;4)</label>
-					<div class="col-sm-10">
+					<label for="lessonhrs" class="col-sm-3 control-label">Select length of lesson in hours (1&#8209;4)</label>
+					<div class="col-sm-1">
 						<input type="number" class="form-control" min="1" max="4" id="lessonhrs" value="1" />
 					</div>
 				</div>
 				<div class="form-group">
+					<label for="skilllevel" class="col-sm-3 control-label">Please select the skill level of student</label>
 					<label class="radio-inline">
 						<input type="radio" name="inlineRadioOptions" id="beginner" value="beginner"> Beginner
 					</label>
@@ -61,23 +61,24 @@
 						<input type="radio" name="inlineRadioOptions" id="advanced" value="advanced"> Advanced
 					</label>
 				</div>
-				<div class="checkbox">
-				<label>
-					<input type="checkbox" value="private">
-					Private Lesson (extra $200 charge)
-				</label>
-				</div>						
 				<div class="form-group">
-					<div class="col-sm-offset-2 col-sm-10">
+					<div class="checkbox">
+						<label for="private" class="col-sm-3 control-label">
+							<input type="checkbox" value="private">
+							Private Lesson (extra $200 charge)
+						</label>
+					</div>	
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-1 col-sm-10">
 						<button type="submit" class="btn btn-default">Submit</button>
 					</div>
 				</div>
 		</form>
-		<h3>Questions?</h3>
-			<h4>Please contact us!  We are always ready to help!</h4>
-			<p>By Phone:(111) 222-3333</p>
-			<p>By Email: golfpros@golfing.com</p>
-		</article>
+		<h4>Lessons can also be booked by phone or through email.</h3>
+		<h4>Questions? Please contact us!  We are always ready to help!</h4>
+		<p>By Phone:(111) 222-3333</p>
+		<p>By Email: golfpros@golfing.com</p>
 	  </div>
     <div class="container border text-center footer">
       <ul class="list-inline">
