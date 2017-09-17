@@ -108,7 +108,7 @@
       </form>
       <br>
       <br>
-      <p class="links">Now that you know your handicap, you can begin your training. Head over to the <a href="tips.html">Tips Page</a> to begin your training. If you would like much more indepth coaching you can <a href="contact.html">contact us or book a lesson</a>.
+      <p class="links">Now that you know your handicap, you can begin your training. Head over to the <a href="tips.html">Tips Page</a> to begin. If you would like much more indepth coaching you can <a href="contact.html">contact us or book a lesson</a>.
       <div style="height: 20px;"></div>
 	  </div>
     <div class="container border text-center footer">
@@ -120,19 +120,7 @@
         <li><a href="contact.html">Book A Lesson</a></li>
       </ul>
 	  </div>
-    <script>
-      document.getElementById("welcomeImage").addEventListener("click", function() {
-        alert("Welcome to The Golf Guide, hopefully we can help");
-      }, false);
-      function handicapCalc() {
-        var score = document.getElementById("scoreValue").value;
-        var course = document.getElementById("courseValue").value;
-        var slope = document.getElementById("slopeValue").value;
-        var handicap = (score - course) * 113 / slope
-        alert("Your handicap is " + handicap);
-      }
-      document.getElementById("submit").addEventListener("click", handicapCalc, false);
-    </script>
+    <script src="js.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	  <!-- Include all compiled plugins (below), or include individual files as needed -->
