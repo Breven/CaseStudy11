@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title>Golfers Tips</title>
-    <!--
-      The Golfers Guide tips page
-      Filename:  tips.html
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Golfers Tips</title>
+		<!--
+		The Golfers Guide tips page
+		Filename:  tips.html
 
-      Author: Garrett
-      Date: 9/9/17
-    -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="modernizr.custom.05819.js"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">The Golfers Guide</a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="tips.html">Tips<span class="sr-only">(current)</span></a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="contact.html">Book A Lesson</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+		Author: Garrett
+		Date: 9/9/17
+		-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="styles.css">
+		<script src="modernizr.custom.05819.js"></script>
+		<script> <!-- Script for picture changer -->
+			var Images = ["images/Driver.png", "images/Wood.png", "images/Hybrid.png", "images/iron.png", "images/Wedge.png", "images/Putter.png"];
+			function changeImage(BigImage) {
+				document.getElementById('BigImage').src = Images[BigImage];
+			}
+		</script>
+	</head>
+	<body>
+	  <nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">The Golfers Guide</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="tips.html">Tips<span class="sr-only">(current)</span></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="contact.html">Book A Lesson</a></li>
+				</ul>
+			</div>
+		</div>
+      </nav>
     <div class="container main">
       <h1>Top 5 golfing tips</h1>
       <br>
@@ -48,14 +54,14 @@
         <li>An <b>iron</b> is used to get close to the green or out of a sand wedge.</li>
 				<li>And a <b>putter</b> is used for when you are on the green and a few yards away from the hole.</li>
       </ul>
-      <br>
-			<table class="table table-striped table-bordered">
-			  <thead>
-			    <tr>
-					  <th>Club Type</th>
-					  <th>Avg. Distance (Yards)</th>
-				  </tr>
-			  </thead>
+		<br>
+		<table class="table table-striped table-bordered">
+		  <thead>
+			   <tr>
+				  <th>Club Type</th>
+				  <th>Avg. Distance (Yards)</th>
+			  </tr>
+		  </thead>
 		    <tbody>
 			    <tr class="danger">
 				    <td>Driver</td>
@@ -85,9 +91,26 @@
 				    <td>Pitching Wedge</td>
 				    <td>120</td>
 			    </tr>
+				<tr class="success">
+					<td>Putter</td>
+					<td>On green</td>
+				</tr>
 		    </tbody>
 			</table>
       <br>
+	  <center>
+		<div>
+			<img src="images/Driver.png" id="BigImage" height="200" width="150" class="img-thumbnail">
+		</div>
+		<br><p>Scroll over each image to display a bigger visual of each club.</p>
+		<img src="images/Driver.png" height="100" width="75" onmouseenter="changeImage('0')" class="img-thumbnail" >
+		<img src="images/Wood.png" height="100" width="75" onmouseenter="changeImage('1')" class="img-thumbnail">
+		<img src="images/Hybrid.png" height="100" width="75" onmouseenter="changeImage('2')" class="img-thumbnail">
+		<img src="images/Iron.png" height="100" width="75" onmouseenter="changeImage('3')" class="img-thumbnail">
+		<img src="images/Wedge.png" height="100" width="75" onmouseenter="changeImage('4')" class="img-thumbnail">
+		<img src="images/Putter.png" height="100" width="75" onmouseenter="changeImage('5')" class="img-thumbnail">
+	  </center>
+	  <br>
 			<p class="lead">2.  Relax</p>
         <ul class="list-styled spacing">
 				  <li>This can be the best tip to remember, as getting frustrated or overthinking can impair your swings and make you hate the game.</li>
