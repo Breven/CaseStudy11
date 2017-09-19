@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="styles.css">
 		<script src="modernizr.custom.05819.js"></script>
-		<script> <!-- Script for picture changer -->
+		<script> // Script for picture changer
 			var Images = ["images/Driver.png", "images/Wood.png", "images/Hybrid.png", "images/iron.png", "images/Wedge.png", "images/Putter.png"];
 			function changeImage(BigImage) {
 				document.getElementById('BigImage').src = Images[BigImage];
@@ -75,7 +75,7 @@
 				    <td>Hybrid</td>
 				    <td>200</td>
 			    </tr>
-			    <tr class="success">
+			    <tr class="warning">
 				    <td>4-Iron</td>
 				    <td>180</td>
 			    </tr>
@@ -91,25 +91,24 @@
 				    <td>Pitching Wedge</td>
 				    <td>120</td>
 			    </tr>
-				<tr class="success">
-					<td>Putter</td>
-					<td>On green</td>
-				</tr>
+				  <tr class="success">
+					  <td>Putter</td>
+					  <td>On green</td>
+				  </tr>
 		    </tbody>
 			</table>
       <br>
-	  <center>
-		<div>
-			<img src="images/Driver.png" id="BigImage" height="200" width="150" class="img-thumbnail">
-		</div>
-		<br><p>Scroll over each image to display a bigger visual of each club.</p>
-		<img src="images/Driver.png" height="100" width="75" onmouseenter="changeImage('0')" class="img-thumbnail" >
-		<img src="images/Wood.png" height="100" width="75" onmouseenter="changeImage('1')" class="img-thumbnail">
-		<img src="images/Hybrid.png" height="100" width="75" onmouseenter="changeImage('2')" class="img-thumbnail">
-		<img src="images/Iron.png" height="100" width="75" onmouseenter="changeImage('3')" class="img-thumbnail">
-		<img src="images/Wedge.png" height="100" width="75" onmouseenter="changeImage('4')" class="img-thumbnail">
-		<img src="images/Putter.png" height="100" width="75" onmouseenter="changeImage('5')" class="img-thumbnail">
-	  </center>
+		<div class="text-center">
+			<img src="images/Driver.png" id="BigImage" height="200" width="150" class="img-thumbnail" alt="Featured golf club">
+			<br>
+			<p>Scroll over each image to display a bigger visual of each club.</p>
+			<img src="images/Driver.png" height="100" width="75" onmouseenter="changeImage('0')" class="img-thumbnail" alt="Driver">
+			<img src="images/Wood.png" height="100" width="75" onmouseenter="changeImage('1')" class="img-thumbnail" alt="Wood">
+			<img src="images/Hybrid.png" height="100" width="75" onmouseenter="changeImage('2')" class="img-thumbnail" alt="Hybrid">
+			<img src="images/Iron.png" height="100" width="75" onmouseenter="changeImage('3')" class="img-thumbnail" alt="Iron">
+			<img src="images/Wedge.png" height="100" width="75" onmouseenter="changeImage('4')" class="img-thumbnail" alt="Wedge">
+			<img src="images/Putter.png" height="100" width="75" onmouseenter="changeImage('5')" class="img-thumbnail" alt="Putter">
+	  </div>
 	  <br>
 			<p class="lead">2.  Relax</p>
         <ul class="list-styled spacing">
