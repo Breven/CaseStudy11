@@ -11,6 +11,19 @@ function handicapCalc() {
   var course = document.getElementById("courseValue").value;
   var slope = document.getElementById("slopeValue").value;
   var handicap = (score - course) * 113 / slope;
-  (score && course && slope) ? alert("Your handicap is " + handicap) : alert("Please fill in all fields");
+  if (score && course && slope) {
+    alert("Your handicap is " + handicap.toFixed(2));
+  }
+  else {
+    alert("Please fill in all fields");
+  }
 }
-document.getElementById("submit").addEventListener("click", handicapCalc, false);
+
+// So the function will work on out of date web browsers
+var handicapButton = document.getElementById("submit");
+if (handicapButton.addEventListener) {
+  handicapButton.addEventListener("click", handicapCalc, false);
+}
+else if (handicapButton.attachEvent) {
+  handicapButton.attachEvent("onclick", submitForm);
+}
