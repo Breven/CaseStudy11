@@ -1,7 +1,7 @@
 /* page backgrounds */
 body {
   background: rgb(117, 194, 50);
-  background: url("images/golf.jpg") no-repeat center center fixed;
+  background: url("../images/golf.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
