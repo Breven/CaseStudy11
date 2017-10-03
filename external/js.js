@@ -1,9 +1,9 @@
 // The Golfers Guide Javascript Page
 
 // In case someone clicks on the first carousel image which is essentially for the home page.
-document.getElementById("welcomeImage").addEventListener("click", function() {
-  alert("Welcome to The Golfers Guide, hopefully we can help you.");
-}, false);
+function firstCaro() {
+  window.alert("Welcome to The Golfers Guide, hopefully we can help you.");
+}
 
 // Javascript for handicap calculator on the home page. Watch your use of id="submit" if you plan to use this external js page on your page.
 function handicapCalc() {
@@ -25,5 +25,14 @@ if (handicapButton.addEventListener) {
   handicapButton.addEventListener("click", handicapCalc, false);
 }
 else if (handicapButton.attachEvent) {
-  handicapButton.attachEvent("onclick", submitForm);
+  handicapButton.attachEvent("onclick", handicapCalc);
+}
+
+// Call function when someone clicks on the first carousel image
+var firstCaroButton = document.getElementById("welcomeImage");
+if (firstCaroButton.addEventListener) {
+  firstCaroButton.addEventListener("click", firstCaro, false);
+}
+else if (firstCaroButton.attachEvent) {
+  firstCaroButton.attachEvent("onclick", firstCaro);
 }
