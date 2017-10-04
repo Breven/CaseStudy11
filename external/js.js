@@ -1,5 +1,11 @@
 // The Golfers Guide Javascript Page
 
+// Global Variables
+var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+var Images = ["images/Driver.png", "images/Wood.png", "images/Hybrid.png", "images/iron.png", "images/Wedge.png", "images/Putter.png"];
+var instructorCost = 0;
+var totalCost = 0;
+
 // In case someone clicks on the first carousel image which is essentially for the home page.
 function firstCaro() {
   window.alert("Welcome to The Golfers Guide, hopefully we can help you.");
@@ -17,6 +23,27 @@ function handicapCalc() {
   else {
     alert("Please fill in all fields");
   }
+}
+
+// Function for adding data to weekly schedule table on contact page
+function addDays() {
+  var i = 0;
+  while (i < 7) {
+    document.getElementsByTagName("th")[i].innerHTML += daysOfWeek[i];
+    i++;
+  }
+}
+
+// Javascript for imageswapper on tips page.
+function changeImage(BigImage) {
+  document.getElementById('BigImage').src = Images[BigImage];
+}
+
+// Run functions on page load
+if (window.addEventListener) {
+  window.addEventListener("load", addDays, false);
+} else if (window.attachEvent) {
+  window.attachEvent("onload", addDays);
 }
 
 // So the function will work on out of date web browsers

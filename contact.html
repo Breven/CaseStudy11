@@ -127,33 +127,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	  <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script>
-		var instructorCost = 0;
-		var totalCost = 0;
-    // Global Variables
-    var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-
-    // Function for adding data to weekly schedule table on contact page
-    function addDays() {
-      var i = 0;
-      while (i < 7) {
-        document.getElementsByTagName("th")[i].innerHTML += daysOfWeek[i];
-        i++;
-      }
-    }
-
-    // Set up page function incase I want to add more functions that are called on load.
-    function setUpPage() {
-      addDays();
-    }
-
-    // Run functions on page load
-    if (window.addEventListener) {
-      window.addEventListener("load", setUpPage, false);
-    } else if (window.attachEvent) {
-      window.attachEvent("onload", setUpPage);
-    }
-	</script>
   <script src="external/js.js"></script>
   </body>
 </html>
