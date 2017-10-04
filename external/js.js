@@ -40,26 +40,33 @@ function changeImage(BigImage) {
 }
 
 // Run functions on page load
-if (window.addEventListener) {
-  window.addEventListener("load", addDays, false);
-} else if (window.attachEvent) {
-  window.attachEvent("onload", addDays);
+var looked = document.getElementById("look");
+if (looked) {
+  if (window.addEventListener) {
+    window.addEventListener("load", addDays, false);
+  } else if (window.attachEvent) {
+    window.attachEvent("onload", addDays);
+  }
 }
 
 // So the function will work on out of date web browsers
 var handicapButton = document.getElementById("submit");
-if (handicapButton.addEventListener) {
-  handicapButton.addEventListener("click", handicapCalc, false);
-}
-else if (handicapButton.attachEvent) {
-  handicapButton.attachEvent("onclick", handicapCalc);
+if (handicapButton) {
+  if (handicapButton.addEventListener) {
+    handicapButton.addEventListener("click", handicapCalc, false);
+  }
+  else if (handicapButton.attachEvent) {
+    handicapButton.attachEvent("onclick", handicapCalc);
+  }
 }
 
 // Call function when someone clicks on the first carousel image
 var firstCaroButton = document.getElementById("welcomeImage");
-if (firstCaroButton.addEventListener) {
-  firstCaroButton.addEventListener("click", firstCaro, false);
-}
-else if (firstCaroButton.attachEvent) {
-  firstCaroButton.attachEvent("onclick", firstCaro);
+if (firstCaroButton) {
+  if (firstCaroButton.addEventListener) {
+    firstCaroButton.addEventListener("click", firstCaro, false);
+  }
+  else if (firstCaroButton.attachEvent) {
+    firstCaroButton.attachEvent("onclick", firstCaro);
+  }
 }
