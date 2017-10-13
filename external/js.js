@@ -1,12 +1,11 @@
 // The Golfers Guide Javascript Page
 
 // Global Variables
-    var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+var request = document.getElementById("scheduleLesson");
+var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
 // In case someone clicks on the first carousel image which is essentially for the home page.
-document.getElementById("welcomeImage").addEventListener("click", function() {
-  alert("Welcome to The Golfers Guide, hopefully we can help you.");
-}, false);
+document.getElementById("welcomeImage").addEventListener("click", function(){window.alert("Welcome to The Golfers Guide, hopefully we can help you.");}, false);
 
 // Javascript for handicap calculator on the home page. Watch your use of id="submit" if you plan to use this external js page on your page.
 function handicapCalc() {
@@ -31,6 +30,11 @@ else if (handicapButton.attachEvent) {
   handicapButton.attachEvent("onclick", submitForm);
 }
 
+// Function to display an alert as a confirmation of submission of Contact form
+function lessonAlert() {
+	window.alert("Thank you for your request!  We will be contacting you shortly to confirm!");
+}
+
     // Function for adding data to weekly schedule table on contact page
     function addDays() {
       var i = 0;
@@ -51,3 +55,10 @@ else if (handicapButton.attachEvent) {
     } else if (window.attachEvent) {
       window.attachEvent("onload", setUpPage);
     }
+	
+// Event Listener for the submit button on the Contact page
+if (request.addEventListener) {
+	request.addEventListener("click", lessonAlert, false);
+} else if (request.attachEvent) {
+	request.attachEvent("onclick", lessonAlert);
+}
