@@ -84,32 +84,43 @@
       <p>The first step to finding out your handicap starts with getting some rounds in and collecting data from those performances. Generally, a range of 5-20 of your most current rounds will suffice as enough reps to accurately calculate your handicap. You will need to find the course rating and slope of the golf property you played on.</p>
       <p>The reason why course rating and slope have a major role with the handicap differential calculation is because both figures indicate course difficulty. For example, let’s say that Bill and Steve averaged 100 strokes over 18 holes, but Steve played a more difficult course than Bill. As an alternative to using averaged scores to determine the handicap index, distinct skill level is factored into the comparisons. Thus, Steve would be more skilled than Bill on the average golf course.</p>
       <br>
-      <form>
-        <div class="form-group">
-          <label for="scoreValue">
-            Enter your score:
-          </label>
-          <input type="number" class="form-control" id="scoreValue" placeholder="Your score">
+      <div class="row">
+        <div class="col-md-5 handiForm">
+          <form>
+            <div class="form-group">
+              <label for="scoreValue">
+                Enter your score:
+              </label>
+              <input type="number" class="form-control" id="scoreValue" placeholder="Your score">
+            </div>
+            <div class="form-group">
+              <label for="courseValue">
+                Enter the course rating:
+              </label>
+              <input type="number" class="form-control" id="courseValue" placeholder="Course Rating">
+            </div>
+            <div class="form-group">
+              <label for="slopeValue">
+                Enter the slope (listed on your scorecard):
+              </label>
+              <input type="number" class="form-control" id="slopeValue" placeholder="Course Slope">
+            </div>
+            <br>
+          </form>
+          <button class="btn btn-success btn-lg" id="hands">Calculate Handicap</button>
         </div>
-        <div class="form-group">
-          <label for="courseValue">
-            Enter the course rating:
-          </label>
-          <input type="number" class="form-control" id="courseValue" placeholder="Course Rating">
+        <div class="col-md-7">
+          <div class="text-center" id="handiBox">
+            Your handicap is:
+            <p id="result"></p>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="slopeValue">
-            Enter the slope (listed on your scorecard):
-          </label>
-          <input type="number" class="form-control" id="slopeValue" placeholder="Course Slope">
-        </div>
-        <br>
-        <button type="submit" class="btn btn-success btn-lg" id="submit">Calculate Handicap</button>
-      </form>
+      </div>
+      <br>
       <br>
       <br>
       <p class="links">Now that you know your handicap, you can begin your training. Head over to the <a href="tips.html">Tips Page</a> to begin. If you would like much more indepth coaching you can <a href="contact.html">contact us or book a lesson</a>.
-      <div style="height: 20px;"></div>
+      <div style="height: 30px;"></div>
 	  </div>
     <div class="container border text-center footer">
       <ul class="list-inline">

@@ -33,6 +33,17 @@ body {
 .spacing {
   line-height: 2.3em;
 }
+#handiBox {
+  border: 4px double black;
+  margin: 0.5em 4em 0 0;
+  padding: 1em;
+  font-size: 2.5em;
+  display: none;
+}
+#result {
+  font-weight: bold;
+  margin-top: 1em;
+}
 
 /* links */
 .links a:link {

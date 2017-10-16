@@ -18,7 +18,8 @@ function handicapCalc() {
   var slope = document.getElementById("slopeValue").value;
   var handicap = (score - course) * 113 / slope;
   if (score && course && slope) {
-    alert("Your handicap is " + handicap.toFixed(2));
+    document.getElementById("result").innerHTML = handicap.toFixed(2);
+    document.getElementById("handiBox").style.display = "block";
   }
   else {
     alert("Please fill in all fields");
@@ -50,7 +51,7 @@ if (looked) {
 }
 
 // So the function will work on out of date web browsers
-var handicapButton = document.getElementById("submit");
+var handicapButton = document.getElementById("hands");
 if (handicapButton) {
   if (handicapButton.addEventListener) {
     handicapButton.addEventListener("click", handicapCalc, false);
