@@ -3,8 +3,6 @@
 // Global Variables
 var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 var Images = ["images/Driver.png", "images/Wood.png", "images/Hybrid.png", "images/iron.png", "images/Wedge.png", "images/Putter.png"];
-var instructorCost = 0;
-var totalCost = 0;
 
 // In case someone clicks on the first carousel image which is essentially for the home page.
 function firstCaro() {
@@ -40,6 +38,17 @@ function changeImage(BigImage) {
   document.getElementById('BigImage').src = Images[BigImage];
 }
 
+function lessonAlert() {
+  var formName = document.getElementById("name").value;
+  var formPhone = document.getElementById("phone").value;
+  if (formName && formPhone) {
+    window.alert("Thank you for your request!  We will be contacting you shortly to confirm!");
+  }
+  else {
+    window.alert("Please fill in required Name and Phone fields");
+  }
+}
+
 // Run functions on page load
 var looked = document.getElementById("look");
 if (looked) {
@@ -47,6 +56,16 @@ if (looked) {
     window.addEventListener("load", addDays, false);
   } else if (window.attachEvent) {
     window.attachEvent("onload", addDays);
+  }
+}
+
+// Event Listener for the submit button on the Contact page
+var request = document.getElementById("scheduleLesson");
+if (request) {
+  if (request.addEventListener) {
+  	request.addEventListener("click", lessonAlert, false);
+   } else if (request.attachEvent) {
+    request.attachEvent("onclick", lessonAlert);
   }
 }
 

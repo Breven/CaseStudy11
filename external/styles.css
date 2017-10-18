@@ -44,6 +44,10 @@ body {
   font-weight: bold;
   margin-top: 1em;
 }
+.required {
+  color: red;
+  margin-left: 25em;
+}
 
 /* links */
 .links a:link {
